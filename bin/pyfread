@@ -193,6 +193,9 @@ def main():
                       type="int", default=100,
                       help="Specify the maximum number of decoys to retain for each gap in the input structure. Higher numbers mean longer running times.")
 
+    parser.add_option("--get_best_esss", dest="get_best_esss", action="store_true", default=False,
+                      help="Select the decoys with best ESSS score to take forward.")
+
     parser.add_option("--first_decoys", dest="first_decoys", type="int", 
                       default=0, 
                       help=" Stops the search after finding INT decoys matching the search criteria. This means that the results will not necessarily be the best possible ones present in the database, but will result in significant speed-ups when cut-offs are loose.")
@@ -285,6 +288,7 @@ def main():
     frd.mutate = opts.mutate
     frd.calculate_contacts = opts.contacts
     frd.contact_identity = opts.contact_identity
+    frd.just_get_the_best_esss = opts.get_best_esss
     
     frd.set_subst_tables(opts.esst)
     

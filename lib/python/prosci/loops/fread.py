@@ -63,7 +63,7 @@ class NonConsecutiveAnchorError(BadInputError):
 
 
 class Fread(object):
-  def __init__(self, db=None, subst_table_path=None, score_cutoff=25, open_rmsd_cutoff=1.0, closed_rmsd_cutoff=0.3, vdw_factor=0.7, close=True, verbose=False, errstream=sys.stderr, meld=True, max_melding_rmsd=1.0, nostruc=False, mutate=False, ccd_target_rmsd=0.15, ccd_iterations=5000, max_decoys=100, first_decoys=0, extension_size=sys.maxsize, extension_minimum=0, calculate_contacts=False, contact_distance=6.0, contact_identity=0.8):
+  def __init__(self, db=None, subst_table_path=None, score_cutoff=25, open_rmsd_cutoff=1.0, closed_rmsd_cutoff=0.3, vdw_factor=0.7, close=True, verbose=False, errstream=sys.stderr, meld=True, max_melding_rmsd=1.0, nostruc=False, mutate=False, ccd_target_rmsd=0.15, ccd_iterations=5000, max_decoys=100, first_decoys=0, extension_size=sys.maxsize, extension_minimum=0, calculate_contacts=False, contact_distance=6.0, contact_identity=0.8, just_get_the_best_esss=False):
     self.score_cutoff = score_cutoff
     self.open_rmsd_cutoff = open_rmsd_cutoff
     self.closed_rmsd_cutoff = closed_rmsd_cutoff
@@ -87,6 +87,7 @@ class Fread(object):
     self.calculate_contacts = calculate_contacts
     self.contact_distance = contact_distance
     self.contact_identity = contact_identity
+    self.just_get_the_best_esss = just_get_the_best_esss
     
     self.warnings = []
     
@@ -416,7 +417,7 @@ class Fread(object):
       _heapadd(results, (f_rank_decoy(decoy), decoy.idecoy, decoy), top)
     
     
-    for decoy in iterate_database(self.db, loop_length, self.subst_tables, anchor_description, loop_sequence, self.open_rmsd_cutoff, self.score_cutoff):
+    for decoy in iterate_database(self.db, loop_length, self.subst_tables, anchor_description, loop_sequence, self.open_rmsd_cutoff, self.score_cutoff, self.just_get_the_best_esss):
         # Structure-based steps: loop closure, clash check, more filtering #
         
         if len(results) >= top:
