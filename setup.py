@@ -10,7 +10,7 @@ setup(name = "prosci",
       version = "1.0",
       description = "FREAD: fragment-based loop modelling method",
       author = "Sebastian Kelm",
-      author_email = "kelm@stats.ox.ac.uk",
+      maintainer_email = "opig@stats.ox.ac.uk",
       packages = [
 
           "prosci",                    # Entire module

@@ -3,7 +3,7 @@
 #  
 #
 #  Created by Sebastian Kelm on 18/09/2010.
-#  Copyright (c) 2010 Sebastian Kelm. All rights reserved.
+#  Copyright 2010 University of Oxford.
 #
 
 import sys

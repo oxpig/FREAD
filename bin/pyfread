@@ -27,16 +27,20 @@ longVersion = """
                               +---------+
 
           PyFREAD : HIGH-SPEED FRAGMENT-BASED LOOP MODELLING
-        copyright 2011-2012 Sebastian Kelm <kelm@stats.ox.ac.uk>
+
+        Developed 2011–2012 by Sebastian Kelm.
+        Copyright 2011 University of Oxford.
 
               Version: {version}
 
-      The "prosci" Python library, used extensively by PyFREAD, is
-        copyright 2007-2012 Sebastian Kelm
+      The "prosci" Python library, used extensively by PyFREAD, was developed
+      2007–2012 by Sebastian Kelm.
+        Copyright 2007 University of Oxford.
 
-      PyFREAD's implementation of Cyclic Co-ordinate Descent is
-        copyright 2011 Yoonjoo Choi        (prototype)
-        copyright 2011 Sebastian Kelm      (C++ implementation)
+      PyFREAD's implementation of Cyclic Co-ordinate Descent was developed by
+        Yoonjoo Choi (prototype), 2011, and
+        Sebastian Kelm (C++ implementation), 2011.
+        Copyright 2011 University of Oxford.
 
       CCD for protein loop closure was first described in
         Canutescu AA, Dunbrack RL (2003) Protein Sci., 12(5):963–972
@@ -45,12 +49,8 @@ longVersion = """
         Choi Y, Deane CM (2010) Proteins, 78(6):1431-40
         Deane CM, Blundell TL (2001) Protein Sci., 10(3):599-612
 
-                          All rights reserved.
-                This program is free for academic use.
-           Commercial use requires the author's permission.
-
           For feedback, bug reports and questions contact:
-                Sebastian Kelm <kelm@stats.ox.ac.uk>
+                Oxford Protein Informatics Group <opig@stats.ox.ac.uk>
 
 """.format(version=VERSION)
 

@@ -26,26 +26,28 @@ longVersion="""
                              +------------+
 
           MultiFREAD : FRAGMENT-BASED MULTIPLE LOOP MODELLING
-          copyright 2011 Sebastian Kelm <kelm@stats.ox.ac.uk>
+
+        Developed 2011 by Sebastian Kelm.
+        Copyright 2011 University of Oxford.
 
                      Version {version}
 
-      The "prosci" Python library is
-        copyright 2007,2008,2009,2010,2011 Sebastian Kelm
+      The "prosci" Python library was developed by Sebastian Kelm, 2007–2011.
+        Copyright 2007 University of Oxford.
 
-      The present implementation of Cyclic Co-ordinate Descent is
-        copyright 2011 Yoonjoo Choi        (first implementation)
-        copyright 2011 Sebastian Kelm      (C++ port & integration)
+      The present implementation of Cyclic Co-ordinate Descent was developed by
+        Yoonjoo Choi (first implementation), 2011, and
+        Sebastian Kelm (C++ port & integration), 2011.
+        Copyright 2011 University of Oxford.
 
-      The FREAD algorithm is
-        copyright 1999 Charlotte M. Deane  (original author)
-        copyright 2009 Yoonjoo Choi        (major revision)
 
-                          All rights reserved.
-                This program is free for academic use only.
+      The original FREAD algorithm is
+        copyright 1999 Charlotte M. Deane.
+      A major revision to the algorithm was performed in 2009 by Yoonjoo Choi,
+        copyright 2009 University of Oxford.
 
           For feedback, bug reports and questions contact:
-                Sebastian Kelm <kelm@stats.ox.ac.uk>
+                opig@stats.ox.ac.uk
 
 """.format(version=VERSION) 
 
